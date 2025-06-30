@@ -1,1 +1,8 @@
-# cta-forecast
+# Can Maths Predict the Future?
+This is a question that I recently stumbled upon in my Econometrics class with Professor Avraham Baranes. We were exploring different Time Series Regression techniques using R. Being the Curious-About-Absolutely-Everything person that I am, I tried applying some of the algorithms on a public transport ridership dataset provided by the Chicago Transit Authority.
+I trained my models with monthly time series data from 2001 to 2018, and tested it against 2019 data (more on why later). I found a Seasonal AutoRegressive Integrated Moving Average model that have an incredibly high predictive power (see model specifications in the first picture). On average, the model's forecasts were only off by approximately 1.52% of the actual ridership in 2019, an amazingly low percentage error. If a classical algorithm could achieve such result, I could only imagine what more advanced techniques, such as those leveraging Deep Learning, could achieve.
+![forecast](https://github.com/user-attachments/assets/fd9bd353-8005-4486-8e70-a610c5d66aed)
+![test2019](https://github.com/user-attachments/assets/7de1bf8a-ce5d-4d74-a4cc-8e31d9eef163)
+Of course, probably no algorithm, regardless of complexity, could have predicted COVID-19. My model failed miserably when predicting 2020 ridership (third picture). This taught me that Maths is useful for recognizing patterns, but unforeseen real-world events can throw everything off course. This is also the one key takeaway that I kept hearing all semester in this Econometrics class:
+"All models are wrong, some are useful".
+![test2020](https://github.com/user-attachments/assets/0f87011b-538d-4799-bf1b-0912f643e30f)
